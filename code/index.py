@@ -56,11 +56,11 @@ def handler(event, context):
 
 # Construct http response object
     responseObject = {}
-    responseObject['statusCode'] = 200
-    responseObject['headers'] = {}
-    responseObject['headers']['Content-Type']='application/json'
-    responseObject['headers']['Access-Control-Allow-Origin']='*'
-    responseObject['body']= staffinClinicList
+    # responseObject['statusCode'] = 200
+    # responseObject['headers'] = {}
+    # responseObject['headers']['Content-Type']='application/json'
+    # responseObject['headers']['Access-Control-Allow-Origin']='*'
+    responseObject['data']= staffinClinicList
     # responseObject['body'] = json.dumps(transactionResponse, sort_keys=True,default=str)
     
     #k = json.loads(responseObject['body'])
